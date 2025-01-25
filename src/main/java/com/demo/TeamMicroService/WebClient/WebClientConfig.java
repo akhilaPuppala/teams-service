@@ -1,4 +1,5 @@
-package com.demo.TeamMicroService.WebConfig;
+package com.demo.TeamMicroService.WebClient;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;

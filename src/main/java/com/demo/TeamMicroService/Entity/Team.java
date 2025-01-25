@@ -21,9 +21,8 @@ public class Team {
     private String name;
 
     @Column(name = "manager_id", nullable = false)
-    private Long managerId; // Refers to Player ID
+    private Long managerId;
 
     @Column(name = "captain_id", nullable = false)
-    private Long captainId; // Refers to Player ID
+    private Long captainId;
 }
-
