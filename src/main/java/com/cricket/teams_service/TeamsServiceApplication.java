@@ -1,13 +1,13 @@
-package com.demo.TeamMicroService;
+package com.cricket.teams_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TeamMicroServiceApplication {
+public class TeamsServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TeamMicroServiceApplication.class, args);
+		SpringApplication.run(TeamsServiceApplication.class, args);
 	}
 
 }
