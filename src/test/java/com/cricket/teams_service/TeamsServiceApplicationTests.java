@@ -1,10 +1,10 @@
-package com.demo.TeamMicroService;
+package com.cricket.teams_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TeamMicroServiceApplicationTests {
+class TeamsServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
