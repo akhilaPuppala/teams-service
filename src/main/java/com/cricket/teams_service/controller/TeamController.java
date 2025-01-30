@@ -1,10 +1,12 @@
 package com.cricket.teams_service.controller;
 
 import java.util.List;
+
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cricket.teams_service.DTO.TeamDTO;
 import com.cricket.teams_service.entity.Team;
 import com.cricket.teams_service.service.TeamService;
+
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/teams")
 
