@@ -59,7 +59,7 @@ public class TeamController {
     }
 
     // Get a team by ID
-    @GetMapping("/{id}")
+    @GetMapping("/get/{id}")
     public ResponseEntity<Team> getTeamById(@PathVariable int id) {
         return teamService.getTeamById(id)
                 .map(ResponseEntity::ok)
