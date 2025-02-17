@@ -46,7 +46,7 @@ public class TeamController {
 
 
     // Fetch all teams by booking ID and return DTO list
-    @GetMapping("/booking/{bookingId}")
+    @GetMapping("/booking/1/{bookingId}")
     public ResponseEntity<List<TeamDTO>> getTeamsByBookingId(@PathVariable int bookingId) {
         List<TeamDTO> teamDTOList = teamService.getTeamsByBookingId(bookingId).stream()
                 .map(team -> new TeamDTO(team.getId(), team.getName(), team.getBookingId()))
@@ -102,7 +102,7 @@ public class TeamController {
 	// 	stadiumSlotPojoFinal.setSlots(slotsFinal);
     // 	return new ResponseEntity<StadiumSlotPojo>(stadiumSlotPojoFinal,HttpStatus.OK);
     // }
-    @GetMapping("/booking/{bookingId}")
+    @GetMapping("/booking/teamPlayers/{bookingId}")
     public ResponseEntity<List<PlayerTeamPojo>> getTeamPlayersByBookingId(@PathVariable int bookingId) {
         List<Team> teams=new ArrayList<>();
         List<PlayerTeamPojo> allTeamsPlayers=new ArrayList<>();
